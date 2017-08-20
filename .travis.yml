@@ -25,11 +25,13 @@ before_script:
 # ------------------------------------------------
 - sed -i'' "s~git@github.com:feverrun/feverrun.github.io.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/feverrun/feverrun.github.io.git~" _config.yml
 # 安装依赖组件
-install:
-- npm install
+# 此处根据情况不同可省略
+#install:
+#- npm install
 # 执行的命令
 script:
-- hexo clean
+# 未必每次都要clean，耗时多
+#- hexo clean  
 - hexo generate
 # 执行的成功后执行 
 after_success:
