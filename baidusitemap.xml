@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://feverrun.top/2017/07/19/%E4%BD%BF%E7%94%A8Travis%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9E%84%E5%BB%BA/</loc>
-    <lastmod>2017-08-20T11:21:37.701Z</lastmod>
+    <lastmod>2017-08-20T13:46:43.962Z</lastmod>
     <data>
         <display>
         <title>travis 使用Travis自动化构建</title>
@@ -22,30 +22,13 @@
     
   <url>
     <loc>http://feverrun.top/2017/07/20/%E6%97%B6%E9%97%B4%E7%9A%84%E5%88%86%E9%85%8D/</loc>
-    <lastmod>2017-08-20T10:42:00.510Z</lastmod>
+    <lastmod>2017-08-20T13:46:21.072Z</lastmod>
     <data>
         <display>
         <title>时间的分配</title>
         <pubTime>2017-07-19T16:00:00.000Z</pubTime>
         
         <tag>-时间</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://feverrun.top/2017/07/15/%E4%B8%BAHexo%E4%B8%8Byilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0livere(%E6%9D%A5%E5%BF%85%E5%8A%9B)%E8%AF%84%E8%AE%BA%E6%94%AF%E6%8C%81/</loc>
-    <lastmod>2017-08-20T04:53:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>为Hexo下yilia主题添加livere(来必力)评论支持</title>
-        <pubTime>2017-07-15T03:51:00.000Z</pubTime>
-        
-        <tag>yilia</tag>
          
          
            
@@ -72,23 +55,6 @@
 
     
   <url>
-    <loc>http://feverrun.top/2017/07/18/%E5%9F%9F%E5%90%8Dwww%E4%B8%8E%E4%B8%8D%E5%B8%A6www%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2017-08-20T04:53:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>域名www与不带www的区别</title>
-        <pubTime>2017-07-18T14:41:43.000Z</pubTime>
-        
-        <tag>domain</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://feverrun.top/2017/07/15/Next%E4%B8%8B%E6%B7%BB%E5%8A%A0Algolia%E6%90%9C%E7%B4%A2%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</loc>
     <lastmod>2017-08-20T04:53:45.000Z</lastmod>
     <data>
@@ -103,6 +69,40 @@
              
               <breadCrumb title="next" url="http://feverrun.top/categories/next/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://feverrun.top/2017/07/15/%E4%B8%BAHexo%E4%B8%8Byilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0livere(%E6%9D%A5%E5%BF%85%E5%8A%9B)%E8%AF%84%E8%AE%BA%E6%94%AF%E6%8C%81/</loc>
+    <lastmod>2017-08-20T04:53:45.000Z</lastmod>
+    <data>
+        <display>
+        <title>为Hexo下yilia主题添加livere(来必力)评论支持</title>
+        <pubTime>2017-07-15T03:51:00.000Z</pubTime>
+        
+        <tag>yilia</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://feverrun.top/2017/07/18/%E5%9F%9F%E5%90%8Dwww%E4%B8%8E%E4%B8%8D%E5%B8%A6www%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2017-08-20T04:53:45.000Z</lastmod>
+    <data>
+        <display>
+        <title>域名www与不带www的区别</title>
+        <pubTime>2017-07-18T14:41:43.000Z</pubTime>
+        
+        <tag>domain</tag>
+         
+         
+           
         </display>
     </data>
     </url>
