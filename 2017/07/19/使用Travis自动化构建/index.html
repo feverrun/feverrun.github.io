@@ -70,18 +70,18 @@
 
 
 
-<meta name="description" content="简介持续集成：Continuous Integration,简称，CI，意思是在一个项目中，任何人对代码的修改，都会触发CI服务器自动对项目进行构建，自动运行测试，好处是随时发现问题。 Travis CI 是什么？Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自己搭建服务器。 GitHubGithub 和 Travis CI 紧密相连 怎么用？1.用github,登录T">
+<meta name="description" content="简介持续集成：Continuous Integration,简称，CI，意思是在一个项目中，任何人对代码的修改，都会触发CI服务器自动对项目进行构建，自动运行测试，好处是随时发现问题。 Travis CI 是什么？Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自己搭建服务器。 GitHubGithub 和 Travis CI 紧密相连 怎么用？ 用github,登录Tr">
 <meta name="keywords" content="travis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="travis 使用Travis自动化构建">
 <meta property="og:url" content="http://feverrun.top/2017/07/19/使用Travis自动化构建/index.html">
 <meta property="og:site_name" content="一直走">
-<meta property="og:description" content="简介持续集成：Continuous Integration,简称，CI，意思是在一个项目中，任何人对代码的修改，都会触发CI服务器自动对项目进行构建，自动运行测试，好处是随时发现问题。 Travis CI 是什么？Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自己搭建服务器。 GitHubGithub 和 Travis CI 紧密相连 怎么用？1.用github,登录T">
+<meta property="og:description" content="简介持续集成：Continuous Integration,简称，CI，意思是在一个项目中，任何人对代码的修改，都会触发CI服务器自动对项目进行构建，自动运行测试，好处是随时发现问题。 Travis CI 是什么？Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自己搭建服务器。 GitHubGithub 和 Travis CI 紧密相连 怎么用？ 用github,登录Tr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-20T10:11:32.020Z">
+<meta property="og:updated_time" content="2017-08-20T11:19:36.116Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="travis 使用Travis自动化构建">
-<meta name="twitter:description" content="简介持续集成：Continuous Integration,简称，CI，意思是在一个项目中，任何人对代码的修改，都会触发CI服务器自动对项目进行构建，自动运行测试，好处是随时发现问题。 Travis CI 是什么？Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自己搭建服务器。 GitHubGithub 和 Travis CI 紧密相连 怎么用？1.用github,登录T">
+<meta name="twitter:description" content="简介持续集成：Continuous Integration,简称，CI，意思是在一个项目中，任何人对代码的修改，都会触发CI服务器自动对项目进行构建，自动运行测试，好处是随时发现问题。 Travis CI 是什么？Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自己搭建服务器。 GitHubGithub 和 Travis CI 紧密相连 怎么用？ 用github,登录Tr">
 
 
 
@@ -374,7 +374,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  206
+                  245
                 </span>
               
 
@@ -402,7 +402,19 @@
         <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>持续集成：Continuous Integration,简称，CI，意思是在一个项目中，任何人对代码的修改，都会触发CI服务器自动对项目进行构建，自动运行测试，好处是随时发现问题。</p>
 <h2 id="Travis-CI-是什么？"><a href="#Travis-CI-是什么？" class="headerlink" title="Travis CI 是什么？"></a>Travis CI 是什么？</h2><p>Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自己搭建服务器。</p>
 <h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>Github 和 Travis CI 紧密相连</p>
-<h2 id="怎么用？"><a href="#怎么用？" class="headerlink" title="怎么用？"></a>怎么用？</h2><h3 id="1-用github-登录Travis-CI的网站-Travis-CI授权"><a href="#1-用github-登录Travis-CI的网站-Travis-CI授权" class="headerlink" title="1.用github,登录Travis CI的网站 Travis CI授权"></a>1.用github,登录Travis CI的网站 <a href="https://travis-ci.org/" target="_blank" rel="external">Travis CI</a>授权</h3><h3 id="2-选择代码库"><a href="#2-选择代码库" class="headerlink" title="2.选择代码库"></a>2.选择代码库</h3><h3 id="3-对应github项目中-travis-yml-文件的创建"><a href="#3-对应github项目中-travis-yml-文件的创建" class="headerlink" title="3.对应github项目中,.travis.yml 文件的创建"></a>3.对应github项目中,.travis.yml 文件的创建</h3><h2 id="使用感受"><a href="#使用感受" class="headerlink" title="使用感受"></a>使用感受</h2><h3 id="1-在github中创建项目，我push本地的文件到github对应项目中，Travis-CI察觉到我的项目的文件变了，立马开始构建，-感觉挺智能的。"><a href="#1-在github中创建项目，我push本地的文件到github对应项目中，Travis-CI察觉到我的项目的文件变了，立马开始构建，-感觉挺智能的。" class="headerlink" title="1. 在github中创建项目，我push本地的文件到github对应项目中，Travis CI察觉到我的项目的文件变了，立马开始构建， 感觉挺智能的。"></a>1. 在github中创建项目，我push本地的文件到github对应项目中，Travis CI察觉到我的项目的文件变了，立马开始构建， 感觉挺智能的。</h3><h3 id="2-对git-的基本用法有了基本的认识"><a href="#2-对git-的基本用法有了基本的认识" class="headerlink" title="2. 对git 的基本用法有了基本的认识"></a>2. 对git 的基本用法有了基本的认识</h3>
+<h2 id="怎么用？"><a href="#怎么用？" class="headerlink" title="怎么用？"></a>怎么用？</h2><ol>
+<li>用github,登录Travis CI的网站 <a href="https://travis-ci.org/" target="_blank" rel="external">Travis CI</a>授权</li>
+<li>选择代码库</li>
+<li>对应github项目中,.travis.yml 文件的创建</li>
+</ol>
+<h2 id="使用感受"><a href="#使用感受" class="headerlink" title="使用感受"></a>使用感受</h2><ol>
+<li>在github中创建项目，我push本地的文件到github对应项目中，Travis CI察觉到我的项目的文件变了，立马开始构建， 感觉挺智能的。<ol>
+<li>对git 的基本用法有了基本的认识</li>
+<li>hexo 不推荐使用 travis，集成慢而且所有的东西都暴露了，不推荐，不如本地环境来的更快速，更实在。</li>
+</ol>
+</li>
+</ol>
+
       
     </div>
     
@@ -590,7 +602,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -612,7 +624,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -718,7 +730,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Travis-CI-是什么？"><span class="nav-number">2.</span> <span class="nav-text">Travis CI 是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub"><span class="nav-number">3.</span> <span class="nav-text">GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么用？"><span class="nav-number">4.</span> <span class="nav-text">怎么用？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-用github-登录Travis-CI的网站-Travis-CI授权"><span class="nav-number">4.1.</span> <span class="nav-text">1.用github,登录Travis CI的网站 Travis CI授权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-选择代码库"><span class="nav-number">4.2.</span> <span class="nav-text">2.选择代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-对应github项目中-travis-yml-文件的创建"><span class="nav-number">4.3.</span> <span class="nav-text">3.对应github项目中,.travis.yml 文件的创建</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用感受"><span class="nav-number">5.</span> <span class="nav-text">使用感受</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-在github中创建项目，我push本地的文件到github对应项目中，Travis-CI察觉到我的项目的文件变了，立马开始构建，-感觉挺智能的。"><span class="nav-number">5.1.</span> <span class="nav-text">1. 在github中创建项目，我push本地的文件到github对应项目中，Travis CI察觉到我的项目的文件变了，立马开始构建， 感觉挺智能的。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-对git-的基本用法有了基本的认识"><span class="nav-number">5.2.</span> <span class="nav-text">2. 对git 的基本用法有了基本的认识</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Travis-CI-是什么？"><span class="nav-number">2.</span> <span class="nav-text">Travis CI 是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub"><span class="nav-number">3.</span> <span class="nav-text">GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么用？"><span class="nav-number">4.</span> <span class="nav-text">怎么用？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用感受"><span class="nav-number">5.</span> <span class="nav-text">使用感受</span></a></li></ol></div>
             
 
           </div>
