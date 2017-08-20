@@ -31,8 +31,8 @@ install:
 # 执行的命令
 script:
 # 未必每次都要clean，耗时多
-- hexo clean  
 - hexo algolia
+- hexo clean  
 - hexo generate
 
 # 执行的成功后执行 
