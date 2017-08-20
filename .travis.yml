@@ -4,11 +4,11 @@ node_js:
 branches:
   only:
   - dev  # 设置自动化部署的源码分支
-
+ 
 env:
   global:
-    secure: rVU9LaZF1Ot0wRoge4tyuk/KZvkp+lKx/oMKW2fAjVojvahNPtzw5k1UDEmaga+XkaJAJPs9Msuh5/JKTaNkpXEPNH3N6/CyTci0MSQZexouF3raYIKdTuJ+7m6CaReJwtp5XGFdSeBeyCjnsgnwTZdSvxU7B/LxLnNiAoWMPyu8ScmBCo1OGJuJ2+lgO88dlphVxYlnIUPm4GhjbuHTBofZprcJoZVBuF+0+bDT3xzLknFlExN2BPjG/0u7Rlsbebpf+0xKHJzbp9foAJbgacStTdU6zV992lJ8LUUo50qqBmrPW6dwUaStKJR25PqbuOyDLKzgyXxa+dMeEuFN2CT6+4mzMVdLZU5w0FN+ossm552WcI+y9ACGEUg9ImvIoXYJW9kpQPa5F6l2XlwwGDti7+6gKFxr6gPsF7ENtRhn85j25whf7el3INB4y7kZHB+sBajsLzok+l4r9E9D0sEj22aSKCMVVhFxN2EArEi9nKJu8zBBTqCMl515QKHL/LyA1JSBaLhq3Ratd7QmS2wnlcR+vtWH1caHf8TxOvPHCaYYZA3J1PfBOo2O8drrNt5Nf3DuNYWVzBHhZ4F51s6fh4Cx367aMamk471XbQ0eOkMbnjB8Wx5t7qH98A0eQt0Z0WuqX4GLjU3dEDJ79KrUtL47d7A3NQBT8C9n2dE=
-
+    secure: N/UCgQegpudCXqjXr6rCT6xTYCUFUnfDoHuNN8/JEH2Vi/9D8bLbWfx8gQuB2wTwuksZhsA4ejca4E7bdX5qw31exKkKUmJihRNlqbMQkqFJpUVq9NpxYMVhgQrq/1JyReA4cMuTl/rfcmyEZfhD5JNEKghCwhoki4WQrFpT7gjMtWzGVO97xg0j/UP9bPphiB4hUtIcwEOVXmZYlGd4hiYVTmmPqgYPWUk+1OZTErK29lLY8CnzXWw51+y9nooMV0ZHQeH5WZaUq/ZsXHtDelT7otAdO5XOmb3v7+5DMzInX2GPbvKkvegE79/5h3ws7B/qPm6300rNdnqQ933NZcdz2bp+B8y7R8nkiR/9Bgf3dk8hRKOcbk39juy7DeTrJq6n4PglGWEmaS4495kwTAxSmGwbbbq1fyU8xoqvbuQi9orpUjDn8nQAHBfFAfWGaErVYkSgUA4ajlL7PHsENp92yzGari12m9LbSyqnRcrR2uGJjLxhv34jBRzC9lF+DJfFnKxJ7j5uSz2gag+Xxv4tocDy0mZxoDVuyRCHeX+Thkt+OmXYCR46/jyqiDLikn5cYKbYGzX/X9y+go2Oo7GmdySX6LVXJfrT1lVrKe8nJ00SsIQLOLuC0+9JugMc/CQ1Ki73y+XgvtlMWxpIwgKatTjsQ3oueU1vduXjgHQ=
+ 
 before_install:
 - export TZ='Asia/Shanghai'  
 - npm install -g hexo
@@ -17,12 +17,12 @@ before_script:
 # ------------------------------------------------
 # 设置github账户信息 注意修改成自己的信息
 # ------------------------------------------------
-- git config --global user.name "xuezhisd"
-- git config --global user.email xuezhi@126.com 
+- git config --global user.name "feverrun"
+- git config --global user.email 209981505@qq.com 
 # ------------------------------------------------
 # github仓库操作  注意将仓库修改成自己的
 # ------------------------------------------------
-- sed -i'' "s~git@github.com:xuezhisd/xuezhisd.github.io.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/xuezhisd/xuezhisd.github.io.git~" _config.yml
+- sed -i'' "s~git@github.com:feverrun/feverrun.github.io.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/feverrun/feverrun.github.io.git~" _config.yml
 # 安装依赖组件
 install:
 - npm install
