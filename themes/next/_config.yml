@@ -120,13 +120,14 @@ social_icons:
   Weibo: weibo
 
 # Blog rolls
-links_title: 外链
+links_title: Links
 #links_layout: block
 #links_layout: inline
 links:
   imooc: http://www.imooc.com/
   runoob: http://www.runoob.com/
   icourse: http://www.icourse163.org/
+  xuefeng: https://www.liaoxuefeng.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
