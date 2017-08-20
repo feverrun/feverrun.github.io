@@ -47,7 +47,7 @@
     <link href="http://feverrun.top/2017/07/19/%E4%BD%BF%E7%94%A8Travis%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9E%84%E5%BB%BA/"/>
     <id>http://feverrun.top/2017/07/19/使用Travis自动化构建/</id>
     <published>2017-07-19T14:41:43.000Z</published>
-    <updated>2017-08-20T11:19:36.116Z</updated>
+    <updated>2017-08-20T11:21:37.701Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>持续集成：Continuous Integration,简称，CI，意思是在一个项目中，任何人对代码的修改，都会触发CI服务器自动对项目进行构建，自动运行测试，好处是随时发现问题。</p>
 <h2 id="Travis-CI-是什么？"><a href="#Travis-CI-是什么？" class="headerlink" title="Travis CI 是什么？"></a>Travis CI 是什么？</h2><p>Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自己搭建服务器。</p>
@@ -58,11 +58,9 @@
 <li>对应github项目中,.travis.yml 文件的创建</li>
 </ol>
 <h2 id="使用感受"><a href="#使用感受" class="headerlink" title="使用感受"></a>使用感受</h2><ol>
-<li>在github中创建项目，我push本地的文件到github对应项目中，Travis CI察觉到我的项目的文件变了，立马开始构建， 感觉挺智能的。<ol>
+<li>在github中创建项目，我push本地的文件到github对应项目中，Travis CI察觉到我的项目的文件变了，立马开始构建， 感觉挺智能的。</li>
 <li>对git 的基本用法有了基本的认识</li>
 <li>hexo 不推荐使用 travis，集成慢而且所有的东西都暴露了，不推荐，不如本地环境来的更快速，更实在。</li>
-</ol>
-</li>
 </ol>
 ]]></content>
     
@@ -140,43 +138,6 @@
   </entry>
   
   <entry>
-    <title>Next下添加Algolia搜索遇到的坑</title>
-    <link href="http://feverrun.top/2017/07/15/Next%E4%B8%8B%E6%B7%BB%E5%8A%A0Algolia%E6%90%9C%E7%B4%A2%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
-    <id>http://feverrun.top/2017/07/15/Next下添加Algolia搜索遇到的坑/</id>
-    <published>2017-07-15T03:51:00.000Z</published>
-    <updated>2017-08-20T04:53:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="当前环境"><a href="#当前环境" class="headerlink" title="当前环境"></a>当前环境</h2><pre><code>hexo 3.3.8
-next 5.1.2
-</code></pre><h2 id="官网已集成algolia搜索"><a href="#官网已集成algolia搜索" class="headerlink" title="官网已集成algolia搜索"></a>官网已集成algolia搜索</h2><p>实现方法如下<br><strong>下面这个要注意：</strong><br>在站点配置文件加入如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">algolia:</div><div class="line">  applicationID: &apos;applicationID&apos;</div><div class="line">  apiKey: &apos;apiKey&apos;</div><div class="line">  adminApiKey: &apos;adminApiKey&apos;</div><div class="line">  indexName: &apos;indexName&apos;</div><div class="line">  chunkSize: 5000</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<h2 id="hexo-algolia-报错"><a href="#hexo-algolia-报错" class="headerlink" title="hexo algolia 报错"></a>hexo algolia 报错</h2><ol>
-<li>站点配置文件algolia那里，缺少对fields的配置</li>
-<li>站点配置文件appID 那里,配置名称有误</li>
-</ol>
-<h2 id="最终站点配置文件修改如下："><a href="#最终站点配置文件修改如下：" class="headerlink" title="最终站点配置文件修改如下："></a>最终站点配置文件修改如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">algolia:</div><div class="line">  appId: &apos;applicationID&apos;</div><div class="line">  applicationID: &apos;applicationID&apos;</div><div class="line">  apiKey: &apos;apiKey&apos;</div><div class="line">  adminApiKey: &apos;adminApiKey&apos;</div><div class="line">  indexName: &apos;indexName&apos;</div><div class="line">  chunkSize: 5000</div><div class="line">  fields:</div><div class="line">     - title</div><div class="line">     - slug</div><div class="line">     - path</div><div class="line">     - content:strip</div></pre></td></tr></table></figure>
-<h2 id="最终主题配置文件修改如下"><a href="#最终主题配置文件修改如下" class="headerlink" title="最终主题配置文件修改如下"></a>最终主题配置文件修改如下</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">algolia_search:</div><div class="line">  enable: true</div><div class="line">  hits:</div><div class="line">    per_page: 10</div><div class="line">  labels:</div><div class="line">    input_placeholder: &quot;输入关键字&quot;</div><div class="line">    hits_empty: &quot;没有找到与 $&#123;query&#125; 相关的内容&quot;</div><div class="line">    hits_stats: &quot;$&#123;hits&#125;条相关记录, 共耗时 $&#123;time&#125; ms&quot;</div></pre></td></tr></table></figure>
-<h2 id="就此问题得到解决"><a href="#就此问题得到解决" class="headerlink" title="就此问题得到解决"></a>就此问题得到解决</h2><blockquote>
-<p>这里的集成，我是被坑了一次</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;当前环境&quot;&gt;&lt;a href=&quot;#当前环境&quot; class=&quot;headerlink&quot; title=&quot;当前环境&quot;&gt;&lt;/a&gt;当前环境&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;hexo 3.3.8
-next 5.1.2
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;官网已集成algolia搜索&quot;&gt;&lt;a href=&quot;#官网已集成algolia搜索&quot; class=&quot;headerlink&quot; title=&quot;官网已集成algolia搜索&quot;&gt;&lt;/a&gt;官网已集成algolia搜索&lt;/h2&gt;&lt;p&gt;实现方法如下&lt;br&gt;&lt;strong&gt;下面这个要注意：&lt;/strong&gt;&lt;br&gt;在站点配置文件加入如下代码:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;algolia:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  applicationID: &amp;apos;applicationID&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  apiKey: &amp;apos;apiKey&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  adminApiKey: &amp;apos;adminApiKey&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  indexName: &amp;apos;indexName&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  chunkSize: 5000&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="next" scheme="http://feverrun.top/categories/next/"/>
-    
-    
-      <category term="next" scheme="http://feverrun.top/tags/next/"/>
-    
-  </entry>
-  
-  <entry>
     <title>为Hexo下yilia主题添加livere(来必力)评论支持</title>
     <link href="http://feverrun.top/2017/07/15/%E4%B8%BAHexo%E4%B8%8Byilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0livere(%E6%9D%A5%E5%BF%85%E5%8A%9B)%E8%AF%84%E8%AE%BA%E6%94%AF%E6%8C%81/"/>
     <id>http://feverrun.top/2017/07/15/为Hexo下yilia主题添加livere(来必力)评论支持/</id>
@@ -218,6 +179,43 @@ next 5.1.2
     
     
       <category term="yilia" scheme="http://feverrun.top/tags/yilia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Next下添加Algolia搜索遇到的坑</title>
+    <link href="http://feverrun.top/2017/07/15/Next%E4%B8%8B%E6%B7%BB%E5%8A%A0Algolia%E6%90%9C%E7%B4%A2%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
+    <id>http://feverrun.top/2017/07/15/Next下添加Algolia搜索遇到的坑/</id>
+    <published>2017-07-15T03:51:00.000Z</published>
+    <updated>2017-08-20T04:53:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="当前环境"><a href="#当前环境" class="headerlink" title="当前环境"></a>当前环境</h2><pre><code>hexo 3.3.8
+next 5.1.2
+</code></pre><h2 id="官网已集成algolia搜索"><a href="#官网已集成algolia搜索" class="headerlink" title="官网已集成algolia搜索"></a>官网已集成algolia搜索</h2><p>实现方法如下<br><strong>下面这个要注意：</strong><br>在站点配置文件加入如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">algolia:</div><div class="line">  applicationID: &apos;applicationID&apos;</div><div class="line">  apiKey: &apos;apiKey&apos;</div><div class="line">  adminApiKey: &apos;adminApiKey&apos;</div><div class="line">  indexName: &apos;indexName&apos;</div><div class="line">  chunkSize: 5000</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h2 id="hexo-algolia-报错"><a href="#hexo-algolia-报错" class="headerlink" title="hexo algolia 报错"></a>hexo algolia 报错</h2><ol>
+<li>站点配置文件algolia那里，缺少对fields的配置</li>
+<li>站点配置文件appID 那里,配置名称有误</li>
+</ol>
+<h2 id="最终站点配置文件修改如下："><a href="#最终站点配置文件修改如下：" class="headerlink" title="最终站点配置文件修改如下："></a>最终站点配置文件修改如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">algolia:</div><div class="line">  appId: &apos;applicationID&apos;</div><div class="line">  applicationID: &apos;applicationID&apos;</div><div class="line">  apiKey: &apos;apiKey&apos;</div><div class="line">  adminApiKey: &apos;adminApiKey&apos;</div><div class="line">  indexName: &apos;indexName&apos;</div><div class="line">  chunkSize: 5000</div><div class="line">  fields:</div><div class="line">     - title</div><div class="line">     - slug</div><div class="line">     - path</div><div class="line">     - content:strip</div></pre></td></tr></table></figure>
+<h2 id="最终主题配置文件修改如下"><a href="#最终主题配置文件修改如下" class="headerlink" title="最终主题配置文件修改如下"></a>最终主题配置文件修改如下</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">algolia_search:</div><div class="line">  enable: true</div><div class="line">  hits:</div><div class="line">    per_page: 10</div><div class="line">  labels:</div><div class="line">    input_placeholder: &quot;输入关键字&quot;</div><div class="line">    hits_empty: &quot;没有找到与 $&#123;query&#125; 相关的内容&quot;</div><div class="line">    hits_stats: &quot;$&#123;hits&#125;条相关记录, 共耗时 $&#123;time&#125; ms&quot;</div></pre></td></tr></table></figure>
+<h2 id="就此问题得到解决"><a href="#就此问题得到解决" class="headerlink" title="就此问题得到解决"></a>就此问题得到解决</h2><blockquote>
+<p>这里的集成，我是被坑了一次</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;当前环境&quot;&gt;&lt;a href=&quot;#当前环境&quot; class=&quot;headerlink&quot; title=&quot;当前环境&quot;&gt;&lt;/a&gt;当前环境&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;hexo 3.3.8
+next 5.1.2
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;官网已集成algolia搜索&quot;&gt;&lt;a href=&quot;#官网已集成algolia搜索&quot; class=&quot;headerlink&quot; title=&quot;官网已集成algolia搜索&quot;&gt;&lt;/a&gt;官网已集成algolia搜索&lt;/h2&gt;&lt;p&gt;实现方法如下&lt;br&gt;&lt;strong&gt;下面这个要注意：&lt;/strong&gt;&lt;br&gt;在站点配置文件加入如下代码:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;algolia:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  applicationID: &amp;apos;applicationID&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  apiKey: &amp;apos;apiKey&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  adminApiKey: &amp;apos;adminApiKey&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  indexName: &amp;apos;indexName&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  chunkSize: 5000&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="next" scheme="http://feverrun.top/categories/next/"/>
+    
+    
+      <category term="next" scheme="http://feverrun.top/tags/next/"/>
     
   </entry>
   
