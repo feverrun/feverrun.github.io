@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>一直走</title>
+  <subtitle>学而不思则罔，思而不学则殆!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://feverrun.top/"/>
+  <updated>2017-08-20T04:53:45.000Z</updated>
+  <id>http://feverrun.top/</id>
+  
+  <author>
+    <name>一直走</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>travis 自动化构建工具</title>
+    <link href="http://feverrun.top/2017/07/19/travis%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+    <id>http://feverrun.top/2017/07/19/travis自动化构建工具/</id>
+    <published>2017-07-19T14:41:43.000Z</published>
+    <updated>2017-08-20T04:53:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="travis是什么？"><a href="#travis是什么？" class="headerlink" title="travis是什么？"></a>travis是什么？</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;travis是什么？&quot;&gt;&lt;a href=&quot;#travis是什么？&quot; class=&quot;headerlink&quot; title=&quot;travis是什么？&quot;&gt;&lt;/a&gt;travis是什么？&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="travis" scheme="http://feverrun.top/tags/travis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>域名www与不带www的区别</title>
+    <link href="http://feverrun.top/2017/07/18/%E5%9F%9F%E5%90%8Dwww%E4%B8%8E%E4%B8%8D%E5%B8%A6www%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://feverrun.top/2017/07/18/域名www与不带www的区别/</id>
+    <published>2017-07-18T14:41:43.000Z</published>
+    <updated>2017-08-20T04:53:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h2><p>访问feverrun.top 可以正常访问<br>访问www.feverrun.top 无法正常访问</p>
+<h2 id="郁闷中"><a href="#郁闷中" class="headerlink" title="郁闷中"></a>郁闷中</h2><p>这是为什么呢？几秒钟。。。</p>
+<h2 id="简单认识域名"><a href="#简单认识域名" class="headerlink" title="简单认识域名"></a>简单认识域名</h2><p>  www.feverrun.top，aaa.feverrun.top，bbb.feverrun.top<br>  同为feverrun.top 这个域名的二级域名<br>  feverrun.top 这个域名为根域名</p>
+<a id="more"></a>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><ol>
+<li>我们从域名服务商提供的后台域名解析那里设置域名解析，需要分别解析@和www(@是根，www是子)</li>
+<li>最好用301重定向，访问www.feverrun.top 转向 feverrun.top</li>
+</ol>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><ol>
+<li><p>我只在乎，主要解决有无www,照样访问网站的问题，目的达到。</p>
+</li>
+<li><p>1中的方法，可行分开解析，搜索引擎抓取网页的时候，会把这两个地址，分别解析，会影响SEO,可做301</p>
+</li>
+<li><p>这里不做深究</p>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;遇到问题&quot;&gt;&lt;a href=&quot;#遇到问题&quot; class=&quot;headerlink&quot; title=&quot;遇到问题&quot;&gt;&lt;/a&gt;遇到问题&lt;/h2&gt;&lt;p&gt;访问feverrun.top 可以正常访问&lt;br&gt;访问www.feverrun.top 无法正常访问&lt;/p&gt;
+&lt;h2 id=&quot;郁闷中&quot;&gt;&lt;a href=&quot;#郁闷中&quot; class=&quot;headerlink&quot; title=&quot;郁闷中&quot;&gt;&lt;/a&gt;郁闷中&lt;/h2&gt;&lt;p&gt;这是为什么呢？几秒钟。。。&lt;/p&gt;
+&lt;h2 id=&quot;简单认识域名&quot;&gt;&lt;a href=&quot;#简单认识域名&quot; class=&quot;headerlink&quot; title=&quot;简单认识域名&quot;&gt;&lt;/a&gt;简单认识域名&lt;/h2&gt;&lt;p&gt;  www.feverrun.top，aaa.feverrun.top，bbb.feverrun.top&lt;br&gt;  同为feverrun.top 这个域名的二级域名&lt;br&gt;  feverrun.top 这个域名为根域名&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="domain" scheme="http://feverrun.top/tags/domain/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo常用命令笔记</title>
+    <link href="http://feverrun.top/2017/07/16/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/"/>
+    <id>http://feverrun.top/2017/07/16/hexo常用命令笔记/</id>
+    <published>2017-07-15T16:47:14.000Z</published>
+    <updated>2017-08-20T04:53:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="常见命令"><a href="#常见命令" class="headerlink" title="常见命令"></a>常见命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;postName&quot; #新建文章</div><div class="line">hexo new page &quot;pageName&quot; #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</div><div class="line">hexo deploy #部署到GitHub</div><div class="line">hexo help  # 查看帮助</div><div class="line">hexo version  #查看Hexo的版本</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure>
+<h2 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令"></a>组合命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo s -g #生成并本地预览</div><div class="line">hexo d -g #生成并上传</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;常见命令&quot;&gt;&lt;a href=&quot;#常见命令&quot; class=&quot;headerlink&quot; title=&quot;常见命令&quot;&gt;&lt;/a&gt;常见命令&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;hexo new &amp;quot;postName&amp;quot; #新建文章&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo new page &amp;quot;pageName&amp;quot; #新建页面&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo generate #生成静态页面至public目录&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo server #开启预览访问端口（默认端口4000，&amp;apos;ctrl + c&amp;apos;关闭server）&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo deploy #部署到GitHub&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo help  # 查看帮助&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo version  #查看Hexo的版本&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://feverrun.top/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Next下添加Algolia搜索遇到的坑</title>
+    <link href="http://feverrun.top/2017/07/15/Next%E4%B8%8B%E6%B7%BB%E5%8A%A0Algolia%E6%90%9C%E7%B4%A2%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
+    <id>http://feverrun.top/2017/07/15/Next下添加Algolia搜索遇到的坑/</id>
+    <published>2017-07-15T03:51:00.000Z</published>
+    <updated>2017-08-20T04:53:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="当前环境"><a href="#当前环境" class="headerlink" title="当前环境"></a>当前环境</h2><pre><code>hexo 3.3.8
+next 5.1.2
+</code></pre><h2 id="官网已集成algolia搜索"><a href="#官网已集成algolia搜索" class="headerlink" title="官网已集成algolia搜索"></a>官网已集成algolia搜索</h2><p>实现方法如下<br><strong>下面这个要注意：</strong><br>在站点配置文件加入如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">algolia:</div><div class="line">  applicationID: &apos;applicationID&apos;</div><div class="line">  apiKey: &apos;apiKey&apos;</div><div class="line">  adminApiKey: &apos;adminApiKey&apos;</div><div class="line">  indexName: &apos;indexName&apos;</div><div class="line">  chunkSize: 5000</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h2 id="hexo-algolia-报错"><a href="#hexo-algolia-报错" class="headerlink" title="hexo algolia 报错"></a>hexo algolia 报错</h2><ol>
+<li>站点配置文件algolia那里，缺少对fields的配置</li>
+<li>站点配置文件appID 那里,配置名称有误</li>
+</ol>
+<h2 id="最终站点配置文件修改如下："><a href="#最终站点配置文件修改如下：" class="headerlink" title="最终站点配置文件修改如下："></a>最终站点配置文件修改如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">algolia:</div><div class="line">  appId: &apos;applicationID&apos;</div><div class="line">  applicationID: &apos;applicationID&apos;</div><div class="line">  apiKey: &apos;apiKey&apos;</div><div class="line">  adminApiKey: &apos;adminApiKey&apos;</div><div class="line">  indexName: &apos;indexName&apos;</div><div class="line">  chunkSize: 5000</div><div class="line">  fields:</div><div class="line">     - title</div><div class="line">     - slug</div><div class="line">     - path</div><div class="line">     - content:strip</div></pre></td></tr></table></figure>
+<h2 id="最终主题配置文件修改如下"><a href="#最终主题配置文件修改如下" class="headerlink" title="最终主题配置文件修改如下"></a>最终主题配置文件修改如下</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">algolia_search:</div><div class="line">  enable: true</div><div class="line">  hits:</div><div class="line">    per_page: 10</div><div class="line">  labels:</div><div class="line">    input_placeholder: &quot;输入关键字&quot;</div><div class="line">    hits_empty: &quot;没有找到与 $&#123;query&#125; 相关的内容&quot;</div><div class="line">    hits_stats: &quot;$&#123;hits&#125;条相关记录, 共耗时 $&#123;time&#125; ms&quot;</div></pre></td></tr></table></figure>
+<h2 id="就此问题得到解决"><a href="#就此问题得到解决" class="headerlink" title="就此问题得到解决"></a>就此问题得到解决</h2><blockquote>
+<p>这里的集成，我是被坑了一次</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;当前环境&quot;&gt;&lt;a href=&quot;#当前环境&quot; class=&quot;headerlink&quot; title=&quot;当前环境&quot;&gt;&lt;/a&gt;当前环境&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;hexo 3.3.8
+next 5.1.2
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;官网已集成algolia搜索&quot;&gt;&lt;a href=&quot;#官网已集成algolia搜索&quot; class=&quot;headerlink&quot; title=&quot;官网已集成algolia搜索&quot;&gt;&lt;/a&gt;官网已集成algolia搜索&lt;/h2&gt;&lt;p&gt;实现方法如下&lt;br&gt;&lt;strong&gt;下面这个要注意：&lt;/strong&gt;&lt;br&gt;在站点配置文件加入如下代码:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;algolia:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  applicationID: &amp;apos;applicationID&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  apiKey: &amp;apos;apiKey&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  adminApiKey: &amp;apos;adminApiKey&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  indexName: &amp;apos;indexName&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  chunkSize: 5000&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="next" scheme="http://feverrun.top/categories/next/"/>
+    
+    
+      <category term="next" scheme="http://feverrun.top/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为Hexo下yilia主题添加livere(来必力)评论支持</title>
+    <link href="http://feverrun.top/2017/07/15/%E4%B8%BAHexo%E4%B8%8Byilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0livere(%E6%9D%A5%E5%BF%85%E5%8A%9B)%E8%AF%84%E8%AE%BA%E6%94%AF%E6%8C%81/"/>
+    <id>http://feverrun.top/2017/07/15/为Hexo下yilia主题添加livere(来必力)评论支持/</id>
+    <published>2017-07-15T03:51:00.000Z</published>
+    <updated>2017-08-20T04:53:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在使用yilia主题后，想添加评论功能，然而主题自带的第三方评论对我来说都用不了，多说关了，网易云跟帖也关了，畅言必须进行域名备案，github page使用不了。在这种情况下，只能使用下livere。    </p>
+<h2 id="注册-livere"><a href="#注册-livere" class="headerlink" title="注册 livere"></a>注册 livere</h2><p>livere 有两个版本：</p>
+<ul>
+<li><p>City 版： 是一款适合所有人使用的免费版本</p>
+</li>
+<li><p>Premium 版：是一款能够帮助企业实现自动化管理的多功能收费版本</p>
+</li>
+</ul>
+<h2 id="添加livere插件"><a href="#添加livere插件" class="headerlink" title="添加livere插件"></a>添加livere插件</h2><p>首先在yilia主题的 _config.yml 文件中添加如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">livere: true</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>然后\layout_partial\post目录下添加livere.ejs，把livere安装代码复制进去，文件内容如下，其中data-uid就是你自己的data-uid。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 来必力City版安装代码 --&gt;</div><div class="line">&lt;div id=&quot;lv-container&quot; data-id=&quot;city&quot; data-uid=&quot;your data-uid&quot;&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	(function(d, s) &#123;</div><div class="line">     var j, e = d.getElementsByTagName(s)[0];</div><div class="line">     if (typeof LivereTower === &apos;function&apos;) &#123; return; &#125;</div><div class="line">     j = d.createElement(s);</div><div class="line">     j.src = &apos;https://cdn-city.livere.com/js/embed.dist.js&apos;;</div><div class="line">     j.async = true;</div><div class="line">     e.parentNode.insertBefore(j, e);</div><div class="line"> &#125;)(document, &apos;script&apos;);</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;noscript&gt;为正常使用来必力评论功能请激活JavaScript&lt;/noscript&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;!-- City版安装代码已完成 --&gt;</div></pre></td></tr></table></figure>
+<p>最后在layout_partial\article.ejs中&lt;% if (!index &amp;&amp; post.comments){ %&gt;后面添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;% if (theme.livere)&#123; %&gt;</div><div class="line">&lt;%- partial(&apos;post/livere&apos;, &#123;</div><div class="line">    key: post.slug,</div><div class="line">    title: post.title,</div><div class="line">    url: config.url+url_for(post.path)</div><div class="line">  &#125;) %&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<p>至此，为yilia主题添加livere评论插件完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在使用yilia主题后，想添加评论功能，然而主题自带的第三方评论对我来说都用不了，多说关了，网易云跟帖也关了，畅言必须进行域名备案，github page使用不了。在这种情况下，只能使用下livere。    &lt;/p&gt;
+&lt;h2 id=&quot;注册-livere&quot;&gt;&lt;a href=&quot;#注册-livere&quot; class=&quot;headerlink&quot; title=&quot;注册 livere&quot;&gt;&lt;/a&gt;注册 livere&lt;/h2&gt;&lt;p&gt;livere 有两个版本：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;City 版： 是一款适合所有人使用的免费版本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Premium 版：是一款能够帮助企业实现自动化管理的多功能收费版本&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;添加livere插件&quot;&gt;&lt;a href=&quot;#添加livere插件&quot; class=&quot;headerlink&quot; title=&quot;添加livere插件&quot;&gt;&lt;/a&gt;添加livere插件&lt;/h2&gt;&lt;p&gt;首先在yilia主题的 _config.yml 文件中添加如下配置：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;livere: true&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="yilia" scheme="http://feverrun.top/tags/yilia/"/>
+    
+  </entry>
+  
+</feed>
