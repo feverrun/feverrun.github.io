@@ -115,7 +115,7 @@ algolia:
      - title
      - slug
      - path
-     - content:strip
+     #- content:strip
 
 # Deployment 
 ## Docs: https://hexo.io/docs/deployment.html
