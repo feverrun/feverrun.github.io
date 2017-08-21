@@ -34,7 +34,7 @@
     </a>
   </div>
   -->
-  <!--
+  
   <p>Hosted by Coding Pages</p>
-  -->
+ 
 {% endif %}

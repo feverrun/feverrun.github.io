@@ -15,6 +15,7 @@ Travis CI 是在线托管CI的服务，用Travis进行持续集成，不要自�
 ## GitHub
 Github 和 Travis CI 紧密相连
 
+<!--more-->
 ## 怎么用？
  1. 用github,登录Travis CI的网站 [Travis CI](https://travis-ci.org/)授权
  2. 选择代码库

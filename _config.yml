@@ -120,17 +120,17 @@ algolia:
 # Deployment 
 ## Docs: https://hexo.io/docs/deployment.html
 #github
-deploy:
-  type: git
-  repo: git@github.com:feverrun/feverrun.github.io.git
-  bransh: master
-
-# coding.net
 #deploy:
 #  type: git
-#  repo:
-#    coding: git@git.coding.net:feverrun/feverrun.git
+#  repo: git@github.com:feverrun/feverrun.github.io.git
 #  bransh: master
+
+#coding.net
+deploy:
+  type: git
+  repo:
+    coding: git@git.coding.net:feverrun/feverrun.git
+  bransh: master
 
 #gitee oschina 码云不支持CNAME
 #deploy:
